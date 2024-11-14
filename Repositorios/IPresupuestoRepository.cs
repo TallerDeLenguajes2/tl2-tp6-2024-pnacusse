@@ -1,5 +1,5 @@
-﻿using tp5.Models;
-namespace tp5.Repositorios
+﻿using tl2_tp6_2024_pnacusse.Models;
+namespace tl2_tp6_2024_pnacusse.Repositorios
 {
     public interface IPresupuestoRepository
     {

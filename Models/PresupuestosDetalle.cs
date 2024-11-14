@@ -1,4 +1,4 @@
-namespace tp5.Models
+namespace tl2_tp6_2024_pnacusse.Models
 {
     public class PresupuestoDetalle
     {

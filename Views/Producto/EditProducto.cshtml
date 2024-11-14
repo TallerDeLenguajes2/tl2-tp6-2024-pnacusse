@@ -1,0 +1,22 @@
+﻿@model tl2_tp6_2024_pnacusse.Models.Productos
+
+@{
+    ViewData["Title"] = "Editar Producto";
+}
+
+<h1>Modificar de Producto</h1>
+
+<form asp-controller="Producto" asp-action="EditProducto" method="post">
+    <div class="form-group mb-3">
+        <label asp-for="Descripcion">Descripción</label>
+        <input asp-for="Descripcion" class="form-control" id="descripcion" value="@Model.Descripcion">
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Precio">Precio</label>
+        <input asp-for="Precio" class="form-control" value="@Model.Precio">
+    </div>
+    <input asp-for="IdProducto" type="hidden" value="@Model.IdProducto" />
+    <div class="form-group mb-2">
+        <button type="submit" class="btn btn-primary">Modificar</button>
+    </div>
+</form>

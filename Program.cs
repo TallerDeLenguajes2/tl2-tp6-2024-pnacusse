@@ -1,7 +1,12 @@
+using tl2_tp6_2024_pnacusse.Repositorios;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
+builder.Services.AddScoped<IPresupuestoRepository,  PresupuestoRepository>();
 
 var app = builder.Build();
 
